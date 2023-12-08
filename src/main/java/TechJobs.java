@@ -120,17 +120,19 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if (!(someJobs.isEmpty())){
+
             for (HashMap<String, String> job : someJobs) {
                 System.out.println("*****");
+
                 for (Map.Entry<String, String> record : job.entrySet()) {
                     System.out.println(String.format("%s: %s", record.getKey(), record.getValue()));
                 }
-                System.out.println("*****\n");
 
+                System.out.println("*****\n");
             }
+
         } else {
             System.out.println("No Results");
         }
-
     }
 }
