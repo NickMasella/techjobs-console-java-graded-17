@@ -122,13 +122,14 @@ public class TechJobs {
         if (!(someJobs.isEmpty())){
 
             for (HashMap<String, String> job : someJobs) {
+                System.out.println("\n");
                 System.out.println("*****");
 
                 for (Map.Entry<String, String> record : job.entrySet()) {
                     System.out.println(String.format("%s: %s", record.getKey(), record.getValue()));
                 }
 
-                System.out.println("*****\n");
+                System.out.println("*****");
             }
 
         } else {
