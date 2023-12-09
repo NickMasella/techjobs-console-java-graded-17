@@ -123,6 +123,7 @@ public class TechJobs {
 
             for (HashMap<String, String> job : someJobs) {
 
+                System.out.println("\r");
                 System.out.println("*****");
 
                 for (Map.Entry<String, String> record : job.entrySet()) {
@@ -130,7 +131,7 @@ public class TechJobs {
                 }
 
                 System.out.println("*****");
-                System.out.println("\r");
+
 
             }
 
